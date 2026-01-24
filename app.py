@@ -34,8 +34,8 @@ st.markdown("""
 @st.cache_resource
 def load_models():
     try:
-        rf_model = joblib.load('rf_tunnel_squeezing.pkl')
-        svm_model = joblib.load('svm_tunnel_squeezing_enhanced.pkl')
+        rf_model = joblib.load('models/rf_tunnel_squeezing.pkl')
+        svm_model = joblib.load('models/svm_tunnel_squeezing_enhanced.pkl')
         return rf_model, svm_model
     except Exception as e:
         st.error(f"Error loading models: {e}")

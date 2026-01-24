@@ -22,3 +22,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Data directories (keep structure, ignore contents)
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
